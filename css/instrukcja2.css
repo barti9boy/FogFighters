@@ -1,0 +1,182 @@
+*, *:before, *:after 
+{
+    box-sizing: border-box;
+}
+* 
+{
+    font-family: fantasy;
+    font-size: 15px;
+    font-weight: lighter;
+    text-decoration: none;
+    color: black;    
+    
+}
+html
+{
+    height: 100%; 
+}
+main
+{
+    display: flex;
+    flex-direction: row;
+}
+h1 
+{
+    
+    font-size: 35px;
+    font-weight: bold;
+    flex-grow: 100;
+    text-align: center;
+
+}
+h3 
+{
+    
+    font-size: 20px;
+    font-weight: bold;
+    flex-grow: 100;
+    text-align: center;
+}
+.choices
+{
+    display: table-row;
+    margin: 0 auto;
+	text-align: justify;
+	padding: 40px 0;
+}
+.choice
+{
+    display: table-row;
+	border-radius: 50%;
+	padding: 10px;
+	margin: auto 10px;
+	transition: all 0.3s ease;
+   
+}
+article
+{
+    margin: 100px;
+    padding: 100px;
+    width: 70%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    background-color: rgba(224, 220, 220, 0.349);
+    display: flex;
+    flex-direction: column;
+    text-align:justify;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5rem;
+}
+
+a.btn
+{ 
+    border: 0;
+    background: rgb(172, 165, 166);
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border: 2px solid rgb(5, 5, 5);
+    padding: 14px 40px;
+    outline: none;
+    color: #272727;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    width: 300px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    flex-grow: 100;
+}
+
+a.btn:hover
+{
+    background: rgba(172, 165, 166, 0.473);
+    padding-left: 1.75rem;
+    color: rgb(194, 185, 185);
+}
+
+@media all and (max-width: 900px)
+{
+    main 
+    {
+        flex-wrap: wrap;
+    }
+    nav
+    {
+        display: flex;
+        flex-direction: column;
+    }
+} 
+/*  video background  */
+
+header {
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    place-items: center;
+  }
+  .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+  }
+  
+  /* makes video darker so u can see the title */
+header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+  }
+  a.b {
+    float: left;
+    cursor: pointer;
+    width: 140px;
+    padding: 20px 25px;
+    background-color: #a5d5ee;
+    color: #14658f;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #2f7ea7;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.7), 
+    0 -1px 0 rgba(64, 38, 5, 0.9);
+    
+    -moz-box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.6), 
+    inset 0 1px 2px rgba(255, 255, 255, 0.7), 
+    0 5px 0 #50b0e2, 0 6px 0 #2f7ea7, 0 10px 2px #ccc;
+    
+    -webkit-box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.6),
+    inset 0 1px 2px rgba(255, 255, 255, 0.7), 
+    0 5px 0 #50b0e2, 0 6px 0 #2f7ea7, 0 10px 2px #ccc;
+    
+    box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.6), 
+    inset 0 1px 2px rgba(255, 255, 255, 0.7), 
+    0 5px 0 #50b0e2, 0 6px 0 #2f7ea7, 0 10px 2px #ccc;
+    
+    }  
+    
+    
+    
+
+
+
+
+

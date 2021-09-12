@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Fog Fighters</title>
+    <link rel="stylesheet" href="style.css">
+    <script src ="/socket.io/socket.io.js"></script>
+    <script src="app.js" charset="uft-8"></script>
+</head>
+<body>
+    
+    <header>
+        <video class="video-container" muted autoplay loop>
+            <source src="fog3.mp4" type="video/mp4" />
+        </video>
+
+    <button id="playButton">Play</button>
+
+    <div class="player p1">
+        Player 1
+        <div class="connected">Connected<span></span></div>
+        <div class="ready">Ready<span></span></div>
+    </div>
+    <div class="player p2">
+        Player 2
+        <div class="connected">Connected<span></span></div>
+        <div class="ready">Ready<span></span></div>
+    </div>
+
+    <div class="container">  <!--Contains player and enemy grids-->
+        <p>My grid</p>
+        <div class="grid grid-user"></div>
+        <p>Enemy grid</p>
+        <div class="grid grid-enemy"></div> 
+    </div>
+
+    <div class="hidden-info"> <!--Contains buttons-->
+        <button id="ready">Ready</button>
+        <button id="warrior">Warrior</button>
+        <button id="warrior_1">Vertical</button>
+        <button id="warrior_2">Horizontal</button>
+        <button id="rogue">Rouge</button>
+        <button id="rogue_1">Diagonally_left</button>
+        <button id="rogue_2">Diagonally_right</button>
+        <button id="archer">Archer</button>
+        <h3 id="whose-go">Your Turn</h3>
+        <h3 id="info"></h3>
+    </div>
+
+    <div class="grid-display"> <!--Contains grid from where we drag fighters-->
+        <div class="fighter warrior" draggable="true"></div>
+        <div class="fighter rogue" draggable="true"></div>
+        <div class="fighter archer" draggable="true"></div> 
+    </div>
+</header>
+</body>
+</html>

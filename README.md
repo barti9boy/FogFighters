@@ -31,6 +31,7 @@ Unit description:
 
 -Attack pattern: attacks two oblique squares, deals 20 damage points to each
 
+
 -----Archer------
 
 -Can be located in the fourth row of your board

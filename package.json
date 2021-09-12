@@ -1,0 +1,28 @@
+{
+  "name": "fogfighters",
+  "version": "1.0.0",
+  "description": "Repozytorium z projektem zaliczeniowym na JPiA - gra Fog Fighters",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grochot-agh/Projekt-grupa7.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grochot-agh/Projekt-grupa7/issues"
+  },
+  "homepage": "https://github.com/grochot-agh/Projekt-grupa7#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

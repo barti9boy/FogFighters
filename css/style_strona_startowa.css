@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+*, *:before, *:after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: fantasy;
+}
+  
+.btn 
+{
+    background: transparent;
+    padding: 0.375rem 0.75rem;
+    display: inline-block;
+    transition: all 0.3s linear;
+    font-size: 0.875rem;
+    border: 2px solid black;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+}
+
+main 
+{
+    display: grid;
+    place-items: center;
+    
+}
+
+.hero 
+{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    
+    
+
+}
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+  }
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+  }
+  
+  
+.banner 
+{
+    background:#272727a9; /* */
+    padding: 40px; /* 4rem 2rem */
+    position: absolute; /* */
+    border-radius: 0.5rem;
+    top: 50%; /* */
+    left: 50%; /* */
+    text-align: center;
+    width: 400px; /* 500px */
+    max-width: 700px;
+    transform: translate(-50%,-50%); /* */
+}
+
+.banner h2 /* */
+{
+    padding-bottom: 20px;
+    color: rgb(221, 221, 221);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.banner h3 /* */
+{
+    padding-top: 10px;
+    color: rgb(221, 221, 221);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.formLog input[type = 'text'], .formLog input[type = 'password'] /* */
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    letter-spacing: 3px;
+    border: 1px solid #a5ffaa;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: rgb(221, 221, 221);
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.formLog input[type = 'text']:focus, .formLog input[type = 'password']:focus /* */
+{
+    width: 280px;
+    border-color:rgb(148, 50, 66);
+}
+
+.formLog input[type = 'submit'] /* */
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border: 2px solid rgb(148, 50, 66);
+    padding: 14px 40px;
+    outline: none;
+    color: rgb(221, 221, 221);
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.formLog input[type = 'submit']:hover /* */
+{
+    background: rgb(148, 50, 66);
+}
+
+.modal-btn 
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border: 2px solid rgb(148, 50, 66);
+    padding: 14px 40px;
+    outline: none;
+    color: rgb(221, 221, 221);
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.modal-btn:hover {
+    background: rgb(148, 50, 66);
+  }
+  
+.modal-overlay 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 1, 1, 0.192);
+    display: grid;
+    place-items: center;
+    transition: 0.25s;
+    visibility: hidden;
+    z-index: -10;
+}
+
+
+.open-modal 
+{
+    visibility: visible;
+    z-index: 10;
+}
+  
+.modal-container 
+{
+    background:rgba(247, 241, 214, 0.959);
+    border-radius: 0.5rem;
+    width: 350px;
+    height: 450px;
+    max-width: 350px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.modal-container h2 /* */
+{
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 500;
+    color: #272727;
+}
+
+.formReg input[type = 'text'], .formReg input[type = 'password'] /* */
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 5px auto;
+    text-align: center;
+    letter-spacing: 3px;
+    border: 2px solid #7c7c86;
+    padding: 14px 10px;
+    width: 270px;
+    outline: none;
+    color: #272727;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.formReg input[type = 'text']:focus, .formReg input[type = 'password']:focus /* */
+{
+    width: 300px;
+    border-color:rgb(148, 50, 66);
+}
+
+.formReg input[id = 'reghaslopowtorz']
+{
+    letter-spacing: 2px;
+}
+
+.formReg input[type = 'submit'] /* */
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border: 2px solid rgb(148, 50, 66);
+    padding: 14px 40px;
+    outline: none;
+    color: #272727;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    width: 300px;
+}
+
+.formReg input[type = 'submit']:hover /* */
+{
+    background: rgb(148, 50, 66);
+}
+
+.logo 
+{
+    font-size: 27px;
+    border: 0;
+    background: rgba(226, 226, 226, 0.473);
+    display: block;
+    margin: 40px auto;
+    text-align: center;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    border: 2px solid rgb(148, 50, 66);
+    padding: 14px 40px;
+    outline: none;
+    color: #272727;
+    width: 325px;
+    text-decoration: none;
+    border-radius: 24px;
+}
+
+a 
+{
+    border: 0;
+    background: rgb(148, 50, 66);
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border: 2px solid rgb(148, 50, 66);
+    padding: 14px 40px;
+    outline: none;
+    color: #272727;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    width: 200px;
+    text-decoration: none;
+}
+
+a:hover
+{
+    background: none;
+    color: rgb(221, 221, 221);
+}
+
+.close-btn 
+{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    background: transparent;
+    border-color: transparent;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    color: #272727;
+}
+
+.close-btn:hover 
+{
+    transform: rotate(180deg);
+}
+
+/*  video  */
+
+.back {
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    place-items: center;
+  }
+  .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+  }
+
+  /* header after - makes video darker so u can see the title */
+.back::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+  }
