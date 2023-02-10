@@ -1,5 +1,5 @@
 # FogFighters
-Repozytorium z projektem zaliczeniowym na JPiA - gra Fog Fighters
+Repozytorium z projektem zaliczeniowym na Języki programowania i algorytmy - gra Fog Fighters
 
 Description of the game:
 Fog Fighters is a online 2-player game, which requires strategy and analitical thinking. Concept of the game is based of the game of battleships. Both players have 4 by 4 boards, on which they arrange their units. These units are: Warrior, Rogue and Archer (each described below). Players do not see each other's boards. After both players located their units on the boards, they each take turns in which they try to hit and eliminate oponent's units. To do so, they must first choose a unit to attack with, and then choose suitable squares on oponent's board. Each unit has unique pattern of attack, and damage they deal to hostile units. Player is informed about successful hits, however he will not be informed which unit or units he attacked or how much damage he delt. Unit that was hit will loose health points equal to the number of damage points attacker delt to that square. When unit's life will be lower or equal to 0, the unit is eliminated and the player is informed that a lethal strike is delivered. After a unit is eliminated from the game, it can no longer be used to attack oponent's board. The first player to eliminate all of oponent's units wins.
